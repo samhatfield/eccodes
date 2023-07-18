@@ -9,7 +9,7 @@ if( HAVE_FORTRAN )
 
     ecbuild_add_executable( TARGET  grib_types
                             NOINSTALL
-                            SOURCES grib_types.f90 grib_fortran_kinds.c )
+                            SOURCES grib_types.f90 )
 
     add_custom_command( OUTPUT  grib_kinds.h
                         COMMAND grib_types > grib_kinds.h
